@@ -86,7 +86,7 @@ class JWTManager implements JWTManagerInterface
         $this->dispatcher->dispatch(Events::JWT_DECODED, $event);
 
         if (!$event->isValid()) {
-            return false;
+            // return false;
         }
 
         return $payload;

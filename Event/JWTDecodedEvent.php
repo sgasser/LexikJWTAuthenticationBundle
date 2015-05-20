@@ -59,6 +59,7 @@ class JWTDecodedEvent extends Event
      */
     public function markAsInvalid()
     {
+        echo "markAsInvalid";
         $this->isValid = false;
         $this->stopPropagation();
     }
